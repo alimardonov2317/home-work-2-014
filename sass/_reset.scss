@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Rubik;
+    src: url("../fonts/Rubik-VariableFont_wght.woff");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik, sans-serif;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+button, input{
+    outline: none;
+    border: none;
+}
+.section__title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+.section__action{
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 30px;
+   
+    button{
+        background: #c3d2dc;
+        padding: 16px 20px;
+        border-radius: 50%;
+        &:nth-child(1){
+            background: #d8e2e8;
+        }
+    }
+}
+@media (max-width: 700px){
+    .section__title{
+        justify-content: start;
+    }
+}
+@media (max-width: 350px){
+    .section__title h2{
+        font-size: 20px;
+    }
+}

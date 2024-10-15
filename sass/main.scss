@@ -1,0 +1,18 @@
+@import "variable";
+@import "reset";
+@import "mixins";
+
+// section
+@import "header";
+@import "hero";
+@import "category";
+@import "products";
+@import "bestseller";
+@import "values";
+@import "about";
+@import "news";
+@import "footer";
+
+body{
+    min-height: 500vh;
+}

@@ -1,0 +1,39 @@
+.values{
+    &__wrapper{
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        
+    }
+    &__card{
+        width: calc(33.33% - 6.66px);
+        text-align: center;
+    }
+    &__title{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 18px;
+    }
+    &__desc{
+        color: #898989;
+        margin-top: 18px;
+    }
+}
+@media (max-width: 768px){
+    .values{
+     
+        &__card{
+            width: calc(50% - 5.65px);
+        }
+    }
+}
+@media (max-width: 375px){
+    .values{
+     
+        &__card{
+            width: 100%;
+        }
+    }
+}
